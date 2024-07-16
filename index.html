@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>for my poging bebe</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+    background-color: #FFFFC2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+#container {
+    margin-top: 50px;
+  }
+#nextButton {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+#nextButton:hover {
+    background-color: #ffbb00;
+  }
+        
+#image img {
+    max-width: 100%;
+    height: auto;
+}</style></head> 
+ <body> 
+  <div id="container"> 
+   <div id="image"></div> 
+   <div id="message"></div> <button id="nextButton">Next</button> 
+  </div> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">const messages = [
+    { text: "hi my oh so poging babyyy ≧﹏≦", img: null },
+    { text: "idk why ko ginawa 'to", img: null },
+    { text: "pero nakaka-enjoy naman siya na medyo nakakahilo", img: null },
+    { text: "so yun nga", img: null },
+    { text: "hoy", img: "https://media.giphy.com/media/etALjiqGpYu76A6mZG/giphy.gif" },
+    { text: "pakyu", img: "https://media.giphy.com/media/QXvUuIO0ALjr7VWlZh/giphy.gif" },
+    { text: "eme", img: null },
+    { text: "i love you baby kooo", img: "https://media.giphy.com/media/QigYdnKB0BL0dvh9Xu/giphy.gif" },
+    { text: "me is nangungulila na", img: "https://media.giphy.com/media/W4RizlO6qZWQRYw9mb/giphy.gif" },
+    { text: "i need lambing na", img: "https://media.giphy.com/media/WJaeeOEt41YfmUzZOq/giphy.gif" },
+    { text: "HWUAHAHAHA", img: null },
+    { text: "i miss youuu", img: "https://media.giphy.com/media/k8etDFKWMUpTi7yATD/giphy.gif" },
+    { text: "hehehehe", img: null },
+    { text: "manlalambing lang ako dito", img: "https://media.giphy.com/media/XA3973BWk2rCs9P57Y/giphy.gif" },
+    { text: "hwhehehe", img: null },
+    { text: "hi sa'king honey bunchie sugar plum pookinangina bear ヾ(＾-＾)ノ", img: "https://media.giphy.com/media/F6zFz1tFiq4oHLo51T/giphy.gif" },
+    { text: "hellow mr. adik sa kiss", img: "https://media.giphy.com/media/a3PCuCu45YIt09bKTX/giphy.gif" },
+    { text: "hihi", img: null },
+    { text: "I want to spend the rest of my life with you, babyyy", img: "https://pbs.twimg.com/media/DwjC2QOV4AA5S1B.jpg" },
+    { text: "I will always be your kakampi", img: "https://pbs.twimg.com/media/EdC5bj2U8AACh3a.jpg" },
+    { text: "I will be your no. 1 fan, your no. 1 supporter sa lahat ng gusto mo", img: "https://i.pinimg.com/originals/66/df/8b/66df8b88989aa31b17a509f174de869b.jpg" },
+    { text: "I will always be your pahinga tuwing napapagod ka, okiii?", img: "https://i.pinimg.com/736x/e8/d3/62/e8d3629130b9a49d07ce5cc9aaf1a11f.jpg" },
+    { text: "I will be your tahanan na magpapatahan sa'yo tuwing may problems ka", img: "https://pbs.twimg.com/media/Dii-BQAUYAA8eBo.jpg" },
+    { text: "I will always be here, mahal", img: "https://i.pinimg.com/originals/72/52/41/72524114ea3c0848badb88015d6ffeea.gif" },
+    { text: "araw-araw kitang pipiliin", img: "https://i.pinimg.com/736x/2c/cc/3b/2ccc3bc90a8bf4f5a3be132e643f1381.jpg" },
+    { text: "tatanggapin kita palagi", img: "https://i.pinimg.com/736x/ef/8f/a4/ef8fa47c0ae427c514766719d8c3f890.jpg" },
+    { text: "pipiliin kita palagi kahit pa sa next life ko, over and over again", img: "https://i.pinimg.com/474x/f3/71/c9/f371c9dbe52bc3d2405afb59b648e08a.jpg" },
+    { text: "ikaw lang palagi", img: "https://media.giphy.com/media/VL51KjwtZjbkCs8Nm6/giphy.gif" },
+    { text: "sorry random", img: null }, 
+    { text: "miss na kasi kita", img: null },
+    { text: "pero yun nga", img: null },
+    { text: "i love you more than so much, my future hubyyy", img: "https://media1.tenor.com/m/SG64eyMJJ80AAAAC/bella-yuta.gif" },
+    { text: "life is so much better with you", img: "https://media.giphy.com/media/9g8a1BBMvxRspBljIG/giphy.gif" },
+    { text: "thank you for coming into my life", img: "https://media.giphy.com/media/LoTu2rQPpj7CeSQztG/giphy.gif" },
+    { text: "I LOVE YOUUUUU!!!!!!", img: "https://media.giphy.com/media/1BgNwWKY7xW5fucSYD/giphy.gif" }, 
+    { text: "magbagong buhay ka na", img: null },
+    { text: "'wag na magjalosi", img: "https://media.giphy.com/media/fHlLLgVnyiOivOTvD4/giphy.gif" },
+];
+
+let currentIndex = 0;
+
+const messageDiv = document.getElementById('message');
+const imageDiv = document.getElementById('image');
+const nextButton = document.getElementById('nextButton');
+
+function showMessage() {
+    const currentMessage = messages[currentIndex];
+    messageDiv.innerHTML = currentMessage.text;
+    imageDiv.innerHTML = currentMessage.img ? `<img src='${currentMessage.img}' />` : '';
+}
+
+nextButton.addEventListener('click', () => {
+    currentIndex++;
+    if (currentIndex < messages.length) {
+        showMessage();
+    } else {
+        nextButton.style.display = 'none';
+        messageDiv.innerHTML = "pahingi kiss (>︿<｡)";
+        imageDiv.innerHTML = '';
+    }
+});
+
+// Show the first message initially
+showMessage();</script></body></html>
